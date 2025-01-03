@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>सगाई निमंत्रण</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            color:black;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            margin-top: 50px;
+            padding: 20px;
+            background-color: #d7f447;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            width: 60%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        h1 {
+            color: #d91c5c;
+        }
+        p {
+            font-size: 18px;
+        }
+        .details {
+            background-color: lawngreen;
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+        button {
+            background-color: red;
+            color:black;
+            padding: 15px 32px;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>साक्षगंध सोहळा</h1>
+    <p>आमच्या कुटुंबाच्या वतीने, तुमचं स्वागत आहे आणि आमच्या प्रिय <strong>विदया</strong> आणि <strong>जयपाल</strong> यांच्या साक्षगंध सोहळा समारंभात तुम्ही सहभागी व्हाल याचा आनंद होईल.</p>
+    
+    <div class="details">
+        <p><strong>तारीख:</strong> <span id="date"></span></p>
+        <p><strong>वेळ:</strong> <span id="time"></span></p>
+        <p><strong>ठिकाण:</strong> <span id="location"></span></p>
+    </div>
+    
+    <button onclick="showDetails()">समारंभाच्या तपशील पहा</button>
+</div>
+
+<script>
+    function showDetails() {
+        document.getElementById("date").innerHTML = "05 जानेवारी 2025";
+        document.getElementById("time").innerHTML = "दुपारी 01:30 वाजता";
+        document.getElementById("location").innerHTML = "आमचे राहते घर सवना ता,चिखली. जि, बुलडाणा.";
+    }
+</script>
+
+</body>
+</html>
